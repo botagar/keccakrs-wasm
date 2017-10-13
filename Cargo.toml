@@ -1,7 +1,14 @@
 [package]
 name = "keccakrs-wasm"
 version = "0.1.0"
+description = "A wasm wrapper around keccakrs"
+homepage = "https://github.com/botagar/keccakrs-wasm"
+repository = "https://github.com/botagar/keccakrs-wasm"
 authors = ["John Geddes <botagar@gmail.com>"]
+keywords = ["keccak", "crypto", "hash", "wasm"]
+categories = ["cryptography"]
+license = "MPL-2.0"
+readme = "README.md"
 
 [dependencies]
 keccakrs = "*"
