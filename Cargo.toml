@@ -1,0 +1,20 @@
+[package]
+name = "keccakrs-wasm"
+version = "0.1.0"
+authors = ["John Geddes <botagar@gmail.com>"]
+
+[dependencies]
+keccakrs = "*"
+
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    "-Clink-args=-s EXPORTED_FUNCTIONS=['_keccak256'] -s ASSERTIONS=1",
+]
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false

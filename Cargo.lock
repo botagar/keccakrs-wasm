@@ -1,0 +1,14 @@
+[root]
+name = "keccakrs-wasm"
+version = "0.1.0"
+dependencies = [
+ "keccakrs 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "keccakrs"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum keccakrs 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)" = "ef81946e108f8e9f6031a966b0a4f6c102351971efb5c229231f1638ae943432"
