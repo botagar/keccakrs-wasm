@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <script>
+          var Module = {
+              wasmBinaryFile: "keccakrs_wasm-d8a8dfaff1d70438.wasm",
+              onRuntimeInitialized: main,
+          };
+          function main() {
+              let keccak256 = Module.cwrap('keccak256', 'string', ['string']);
+              let hash = keccak256("");
+              console.log(hash);
+              hash = keccak256("abc");
+              console.log(hash);
+          }
+      </script>
+      <script src="keccakrs_wasm-d8a8dfaff1d70438.js"></script>
+  </head>
+  <body></body>
+</html>
